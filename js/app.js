@@ -86,7 +86,7 @@ Player.prototype.handleInput = function(key) {
 var checkCollisions = function() {
     allEnemies.forEach(function(enemy) {
         // If the player touches an enemy, the game resets
-        if (player.x >= enemy.x - 10 && player.x <= enemy.x + 10) {
+        if (player.x >= enemy.x - 50 && player.x <= enemy.x + 50) {
             if (player.y >= enemy.y - 10 && player.y <= enemy.y + 10) {
                 player.reset();
             }
