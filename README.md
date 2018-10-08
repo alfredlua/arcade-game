@@ -6,7 +6,7 @@ Cross the road to the river while avoiding the other characters
 
 ## How to play
 
-1. Load the game by opening the index.html file in a browswer. (Alternatively, you can click [here](https://htmlpreview.github.io/?https://github.com/alfredlua/arcade-game/blob/master/index.html) to preview index.html on your browser.
+1. Load the game by opening the index.html file in a browser. (Alternatively, you can click [here](https://htmlpreview.github.io/?https://github.com/alfredlua/arcade-game/blob/master/index.html) to preview index.html on your browser.
 2. Use the arrow keys to move your character around.
 3. Cross the road to the river without colliding into the other characters.
 4. Good luck!
