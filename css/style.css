@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+.winning-modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -115px;
+	background-color: #e3dece;
+	color: #000;
+	text-align: center;
+	padding: 10px 60px;
+	border-radius: 4px;
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(79,79,79,1);
+	box-shadow: 5px 5px 10px 0px rgba(79,79,79,1);
+	display: none;
+}
+
+.winning-modal p {
+	font-size: 30px;
+}
+
+.winning-modal.show {
+	display: inherit;
+}
+
+.restart {
+	background-color: #6ac852;
+	cursor: pointer;
+}
+
+.restart p {
+	font-size: 18px;
+	color: #fff;
+	padding: 5px;
+}
