@@ -148,20 +148,20 @@ document.addEventListener('keyup', function(e) {
 });
 
 // Show winning modal
-const winningModal = document.querySelector('.winning-modal');
+const $winningModal = document.querySelector('.winning-modal');
 
 function win() {
-    winningModal.classList.toggle('show');
+    $winningModal.classList.toggle('show');
 }
 
 // Let user restart the game
-const restart = document.querySelector('.restart');
+const $restart = document.querySelector('.restart');
 
 function restartGame() {
     // Hide winning modal
-    winningModal.classList.toggle('show');
+    $winningModal.classList.toggle('show');
     // Reset player's location
     player.reset();
 }
 
-restart.addEventListener('click', restartGame);
+$restart.addEventListener('click', restartGame);
