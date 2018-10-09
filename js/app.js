@@ -51,20 +51,31 @@ var Player = function() {
 
 // Update the player's position
 Player.prototype.update = function(direction) {
-    if (direction == "left" && this.x > 0) {
-        this.x = this.x - 100;
-    } else if (direction == "up" && this.y > 0) {
-        this.y = this.y - 82;
-        // When the player reaches the river, the player wins
-        if (this.y < 10) {
-            win();
-        }
-    } else if (direction == "right" && this.x < 400) {
-        this.x = this.x + 100;
-    } else if (direction == "down" && this.y < 380) {
-        this.y = this.y + 82;
+    switch (direction) {
+        case 'left':
+            if (this.x > 0) {
+                this.x -= 100;
+            }
+            break;
+        case 'right':
+            if (this.x < 100) {
+                this.x += 100;
+            }
+            break;
+        case 'up':
+            if (this.y > 0) {
+                this.y -= 82;
+                if (this.y < 10) {
+                    win();
+                }
+            }
+            break;
+        case 'down':
+            if (this.y < 300) {
+                this.y += 82;
+            }
+            break;
     }
-
 };
 
 // Draw the player on the screen
@@ -93,14 +104,14 @@ var checkCollisions = function() {
                 player.reset();
             }
         }
-    }
-)}
+    })
+};
 
 // Reset the player's position
 Player.prototype.reset = function() {
     this.x = 200;
     this.y = 380;
-}
+};
 
 
 // Now instantiate your objects.
