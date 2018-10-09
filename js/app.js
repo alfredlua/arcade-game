@@ -123,13 +123,14 @@ Player.prototype.reset = function() {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
-const enemy1 = new Enemy(0, 50);
-const enemy2 = new Enemy(-500, 135);
-const enemy3 = new Enemy(-100, 220);
-const enemy4 = new Enemy(-300, 50);
-const enemy5 = new Enemy(0, 135);
-const enemy6 = new Enemy(-200, 220);
-const allEnemies = [enemy1, enemy2, enemy3, enemy4, enemy5, enemy6];
+const allEnemies = [
+    new Enemy(0, 50),
+    new Enemy(-500, 135),
+    new Enemy(-100, 220),
+    new Enemy(-300, 50),
+    new Enemy(0, 135),
+    new Enemy(-200, 220)
+];
 
 const player = new Player();
 
