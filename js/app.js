@@ -58,7 +58,7 @@ Player.prototype.update = function(direction) {
             }
             break;
         case 'right':
-            if (this.x < 100) {
+            if (this.x < 400) {
                 this.x += 100;
             }
             break;
@@ -85,14 +85,19 @@ Player.prototype.render = function() {
 
 // Enable the use of arrow keys to move the player
 Player.prototype.handleInput = function(key) {
-    if (key == "left") {
-        this.update("left");
-    } else if (key == "up") {
-        this.update("up");
-    } else if (key == "right") {
-        this.update("right");
-    } else if (key == "down") {
-        this.update("down");
+    switch (key) {
+        case 'left':
+            this.update("left");
+            break;
+        case 'right':
+            this.update("right");
+            break;
+        case 'up':
+            this.update("up");
+            break;
+        case 'down':
+            this.update("down");
+            break;
     }
 };
 
